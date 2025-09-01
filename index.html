@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DibbleDabble— Beta Signup</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Work Sans', sans-serif;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      color: #2c3e50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 20px;
+      text-align: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      background: #ffffffee;
+      border-radius: 24px;
+      max-width: 520px;
+      width: 100%;
+      padding: 40px 35px;
+      box-shadow:
+        0 4px 15px rgba(44, 62, 80, 0.2);
+      animation: fadeInUp 0.8s ease forwards;
+      position: relative;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #34495e;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    p.lead {
+      font-weight: 400;
+      font-size: 1.1rem;
+      margin-bottom: 1.8rem;
+      color: #4a6572;
+      line-height: 1.6;
+    }
+
+    p.subtext {
+      font-weight: 300;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      color: #7f8c8d;
+      line-height: 1.5;
+    }
+
+    .form-container {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow:
+        0 4px 12px rgba(0,0,0,0.08);
+      height: 520px;
+      animation: fadeInUp 1s ease 0.3s forwards;
+      opacity: 0;
+      transform: translateY(20px);
+      border: 1.5px solid #d1e3f0;
+      background: #f9fbfd;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+      border-radius: 20px;
+    }
+
+    /* Soft accent shapes */
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(162, 210, 255, 0.35);
+      filter: blur(60px);
+      z-index: 0;
+    }
+    .circle1 {
+      width: 160px;
+      height: 160px;
+      top: -40px;
+      right: -40px;
+    }
+    .circle2 {
+      width: 220px;
+      height: 220px;
+      bottom: -60px;
+      left: -60px;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 20px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      p.lead {
+        font-size: 1rem;
+      }
+      .form-container {
+        height: 600px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Beta signup form for Brand Foofoo">
+    <h1>FOOFOO</h1>
+    <p class="lead">Empowering recovery and therapy with innovative training solutions.</p>
+    <p class="subtext">Our next-gen platform blends science and technology to enhance your wellness journey. Join our beta and start transforming your approach today.</p>
+
+    <div class="form-container" aria-live="polite">
+      <iframesrc="https://docs.google.com/forms/d/e/FORM_ID_FOOFOO/viewform?embedded=true"
+        title="Beta signup form for Brand Foofoo"
+        loading="lazy"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+      >
+        Loading…
+      </iframe>
+    </div>
+
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+  </div>
+</body>
+</html>
